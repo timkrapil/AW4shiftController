@@ -61,19 +61,13 @@ void loop() {
   
 
   if (bouncer1.fell()){
-    
       if (Gear < 4){
-      Gear = Gear + 1;
-      Serial.println("+");
-      //delay(1000);
+      Gear++;
       }
     }
   if (bouncer2.fell()){
-    
       if (Gear > 1){
-      Gear = Gear -1;
-      Serial.println("-");
-      //delay(1000);
+      Gear--;
       }
     }
 
